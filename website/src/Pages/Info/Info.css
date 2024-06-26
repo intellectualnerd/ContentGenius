@@ -121,8 +121,11 @@
     .hero_container{
         min-height: 650px;
     }
-    .hero_container, .secondary_container{
+    .hero_container{
         padding: 0 4%;
+    }
+    .secondary_container{
+        padding: 50px 4%;
     }
     .card{
         width: 100%;
