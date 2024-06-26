@@ -1,0 +1,165 @@
+/*---------------------Fonts----------------------*/
+@import url("https://db.onlinewebfonts.com/c/a5a4db7e289653583c015ec552b49f5b?family=Lemon+Mocktail");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@font-face {
+    font-family: Arial, Helvetica, sans-serif;
+    src: url(./Fonts/helvetica-255-cufonfonts/Helvetica.ttf) format("ttf");
+}    
+
+/*---------------------Colors----------------------*/
+:root{
+    --lemongreen : #87FF29;
+    --dark-lemongreen : #76DB28;
+    --darkgreen : #447F16;
+
+    --black :#161A16;
+    --light-black: #232523;
+
+    --white:#FFFFFF;
+    --gray:#D9D9D9;
+}
+
+/*Have all reusable components css*/
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box !important;
+    z-index: 2;
+}
+::selection {
+    color: var(--white);
+    background: var(--darkgreen);
+}
+
+
+button{
+    border: none;
+}
+.row{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;  
+    width: 100vw;
+    overflow-x: hidden; 
+}
+#root{
+    width: 100vw;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+.herofonts{
+    font-family: "Lemon Mocktail";
+    font-size: 4.5rem;
+    line-height: 4.2rem;
+    font-weight: 500;
+    text-shadow: -5px 0 var(--dark-lemongreen);
+    color :var(--black)
+}
+.herofonts-blckback{
+    color: var(--lemongreen);
+    text-shadow: -5px 0 #3A3A3B;
+}
+.herobutton{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 16px 38px 12px 38px;
+    background-color: var(--black);
+    color: var(--white);
+    position: relative;
+    margin-left: 6px;
+    box-shadow: -6px 0px var(--gray);
+    z-index: 2;
+}
+.herobutton::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    z-index: 0;
+    border: 3px solid var(--darkgreen);
+    top:0;
+    right: -10px;
+    rotate: -3deg;
+    transition: 0.5s;
+}
+.herobutton:hover::before{
+    rotate: 0deg;
+    right: 0;
+}
+.herobutton_svg{
+    display: inline-block;
+    height: 2.2rem;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+.title-bebasfont{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    color: var(--white);
+}
+@keyframes herobutton{
+    to{
+        rotate: 0;
+        right:0;
+    }
+}
+
+@media screen and (max-width: 1200px){
+   .herofonts{
+    font-size: 4rem;
+    line-height: 3.8rem;
+   }
+   .title-bebasfont{
+    font-size: 2.8rem;
+   }
+}
+@media screen and (max-width: 900px){
+    .herofonts{
+        font-size: 3rem;
+        line-height: 2.8rem;
+    }
+    
+   .title-bebasfont{
+    font-size: 2.4rem;
+   }
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 576px){
+    .herofonts{
+        font-size: 2.7rem;
+        line-height: 2.5rem;
+        text-shadow:  -3px 0 var(--dark-lemongreen);
+    }
+    
+    .herofonts-blckback{
+        color: var(--lemongreen);
+        text-shadow: -3px 0 #3A3A3B;
+    }
+    .herobutton{
+        font-size: 1.2rem;
+        padding: 10px 20px 8px 20px;
+        box-shadow: -4px 0px var(--gray);
+        margin-left: 4px;
+    }
+    .herobutton::before{
+        border: 2px solid var(--darkgreen);
+        right: -5px;
+    }
+    .herobutton_svg{
+        height: 1.4rem;
+    }
+}
