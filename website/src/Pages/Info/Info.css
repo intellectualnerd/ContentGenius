@@ -118,10 +118,17 @@
     .heroimg {
         height: 230px;
     }
+    .hero_container{
+        min-height: 650px;
+    }
     .hero_container, .secondary_container{
-        padding: 0 4%!important;
+        padding: 0 4%;
+    }
+    .card{
+        width: 100%;
     }
     .ShowcaseDiv{
         padding: 28px 20px;
+        width: 100%;
     }
 }
