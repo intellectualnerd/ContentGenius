@@ -7,7 +7,7 @@
 }
 
 .herosec {
-    height: 100vh;
+    height: 100dvh;
     min-height: 730px;
     width: 100%;
     display: block;
@@ -115,9 +115,6 @@
 }
 
 @media screen and (max-width: 576px) {
-    .hero_container{
-        min-height: 630px;
-    }
     .hero_container{
         padding: 0 4%;
     }
