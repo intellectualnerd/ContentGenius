@@ -1,14 +1,14 @@
 .hero_container {
     padding: 0 8%;
     width: 100vw;
-    background-color: var(--lemongreen);
-    min-height: 730px;
+    background-color: var(--lemongreen);   
     position: relative;
     overflow-x: hidden;
 }
 
 .herosec {
     height: 100vh;
+    min-height: 730px;
     width: 100%;
     display: block;
 }
@@ -115,9 +115,6 @@
 }
 
 @media screen and (max-width: 576px) {
-    .heroimg {
-        height: 230px;
-    }
     .hero_container{
         min-height: 630px;
     }
