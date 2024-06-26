@@ -113,3 +113,15 @@
         height: 90px;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .heroimg {
+        height: 230px;
+    }
+    .hero_container, .secondary_container{
+        padding: 0 4%!important;
+    }
+    .ShowcaseDiv{
+        padding: 28px 20px;
+    }
+}
