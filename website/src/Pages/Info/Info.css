@@ -152,4 +152,17 @@
     }
 }
 
-
+@media screen and (max-width: 335px){
+    .heroimg{
+        height: 200px;
+    }
+    .herosec{
+        height: auto;
+    }
+    .herobutton{
+        margin-bottom: 220px;
+    }
+    .normal-font{
+        
+    }
+}

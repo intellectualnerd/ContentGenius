@@ -113,6 +113,7 @@ body{
     font-size: 3rem;
     color: var(--white);
 }
+
 @keyframes herobutton{
     to{
         rotate: 0;
@@ -166,5 +167,14 @@ body{
     }
     .herobutton_svg{
         height: 1.4rem;
+    }
+}
+@media screen and (max-width: 335px){
+    .herofonts{
+        font-size: 2rem;
+        line-height: 1.9rem;
+    }
+    .title-bebasfont{
+        font-size: 1.8rem;
     }
 }
