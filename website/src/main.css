@@ -1,4 +1,5 @@
 /*---------------------Fonts----------------------*/
+@import url("https://db.onlinewebfonts.com/c/a5a4db7e289653583c015ec552b49f5b?family=Lemon+Mocktail");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @font-face {
     font-family: Arial, Helvetica, sans-serif;
@@ -145,6 +146,7 @@ body{
         font-size: 2.7rem;
         line-height: 2.5rem;
         text-shadow:  -3px 0 var(--dark-lemongreen);
+        font-family: "Lemon Mocktail";
     }
     
     .herofonts-blckback{
