@@ -78,6 +78,25 @@
     background-color: var(--light-black);
     border-radius: 6px;
 }
+
+
+/* for preload the image */
+
+
+.loading-img {
+  filter: blur(1px);
+  transition: filter 1s ease-in-out;
+}
+
+.loaded-img {
+  opacity: 0; 
+  transition: opacity 1s ease-in-out; 
+}
+
+.loaded-img,.loaded {
+  opacity: 1; 
+}
+
 @media screen and (max-width: 1400px) {
     .heroimg {
         height: 450px;
@@ -132,3 +151,5 @@
         width: 100%;
     }
 }
+
+

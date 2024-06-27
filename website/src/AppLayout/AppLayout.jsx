@@ -18,10 +18,8 @@ const AppLayout = () => {
     //         clearTimeout(timer); // Clean up timer if component unmounts or state changes
     //     };
     // }, []); // Empty dependency array to run effect only once on component mount
-    document.body.style.overflow="visible";
-    document.body.style.overflowX="hidden";
+    
     useEffect(() => {
-        document.body.style.overflow="hidden";
         
         WebFont.load({
             custom: {
@@ -49,8 +47,8 @@ const AppLayout = () => {
 
     return (
         <>
+            <main style={isLoading?{overflowY:'hidden',height: '100px',width: '100px'}:{overflowY:'hidden',height: 'auto',width: 'auto'}}>
             {isLoading && <LoaderAnimation />}
-            <main>
                 <Outlet />
             </main>
         </>
