@@ -13,7 +13,7 @@ import Error_500 from "./Pages/Error/Error_500/Error_500";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import "./main.css";
-
+import LoaderAnimation from "./AppLayout/Loader/LoaderAnimation";
 import Info from "./Pages/Info/Info";
 import Error_404 from "./Pages/Error/Error_404/Error_404";
 
