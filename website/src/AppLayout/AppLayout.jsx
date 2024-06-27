@@ -18,24 +18,28 @@ const AppLayout = () => {
     //         clearTimeout(timer); // Clean up timer if component unmounts or state changes
     //     };
     // }, []); // Empty dependency array to run effect only once on component mount
-useEffect(() => {
-    WebFont.load({
-      custom: {
-        families: [
-          'Lemon Mocktail', 
-          'Bebas Neue',
-          'Arial, Helvetica, sans-serif'
-        ],
-        urls: [
-          'https://db.onlinewebfonts.com/c/a5a4db7e289653583c015ec552b49f5b?family=Lemon+Mocktail',
-          '../main.css' // Replace with the actual path to your local font CSS file
-        ]
-      },
-      active: () => {
-        setIsLoading(false);
-      }
-    });
-  }, []);
+    document.body.style.overflow="visible";
+    document.body.style.overflowX="hidden";
+    useEffect(() => {
+        document.body.style.overflow="hidden";
+        
+        WebFont.load({
+            custom: {
+                families: [
+                    'Lemon Mocktail',
+                    'Bebas Neue',
+                    'Arial, Helvetica, sans-serif'
+                ],
+                urls: [
+                    'https://db.onlinewebfonts.com/c/a5a4db7e289653583c015ec552b49f5b?family=Lemon+Mocktail',
+                    '../main.css' // Replace with the actual path to your local font CSS file
+                ]
+            },
+            active: () => {
+                setIsLoading(false);
+            }
+        });
+    }, []);
     useEffect(() => {
         // Check if the location state indicates loading
         if (location.state && location.state.action === "loading") {

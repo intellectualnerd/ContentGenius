@@ -2,6 +2,7 @@ import React from 'react';
 import './LoaderAnimation.css';
 
 const LoaderAnimation = () => {
+    
     return (
         <>
             <div className='body'>
@@ -17,6 +18,7 @@ const LoaderAnimation = () => {
                         ))}
                     </div>
                 </div>
+                <h3>Loading...</h3>
             </div>
         </>
 
