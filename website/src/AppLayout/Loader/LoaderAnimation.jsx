@@ -1,7 +1,7 @@
 import React from 'react';
 import './LoaderAnimation.css';
 
-const LoaderAnimation = () => {
+const LoaderAnimation = ({progress}) => {
     return (
         <>
             <div className='body'>

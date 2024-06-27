@@ -7,7 +7,16 @@ import Element from "./components/Element"
 import Titlefonts from "../../ReusableComponents/Titlefonts"
 import Card from "./components/Card"
 import ShowcaseDiv from "./components/ShowcaseDiv"
+import { useState ,useEffect} from "react"
 const Info = () => {
+    const [Loaded, setLoaded] = useState(false)
+    useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setLoaded(true);
+    };
+    img.src =heroimg; // Replace with the path to your PNG image
+  }, []);
     return (
         <>
             <div className="hero_container">
@@ -31,7 +40,25 @@ const Info = () => {
                     </div>
 
                     <Element />
-                    <img src={heroimg} className="heroimg" />
+       {!Loaded && (
+        <div className="loading-container">
+          <img
+            className="loading-img blur heroimg"
+            src={heroimg} // Optionally, provide a low-resolution version for initial loading
+            alt="Loading..."
+          />
+        </div>
+      )}
+                     {Loaded && (
+        <div className="loaded-container">
+          <img
+            className="loaded-img heroimg"
+            src={heroimg} // Replace with the path to your full-resolution PNG image
+            alt="Loaded"
+          />
+        </div>
+      )}
+                    {/* <img src={heroimg} className="heroimg" /> */}
                 </div>
             </div>
 
