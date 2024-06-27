@@ -1,29 +1,41 @@
 import ReactDOM from "react-dom/client";
 
-import { 
-  createBrowserRouter, 
-  createRoutesFromElements, 
-  Route, 
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
   RouterProvider,
   Link
-} from 'react-router-dom';
-
-
+}
+  from 'react-router-dom';
+import AppLayout from './AppLayout/AppLayout';
+import Error_500 from "./Pages/Error/Error_500/Error_500";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import "./main.css";
+
 import Info from "./Pages/Info/Info";
 import Error_404 from "./Pages/Error/Error_404/Error_404";
 
 // router and routes
-const router = createBrowserRouter(
-  
-  createRoutesFromElements(
-    <Route >
-      <Route index path="/" element={<Info />} />
-      <Route path="*" element={<Error_404 />} />
-    </Route>
-  )
+const router = createBrowserRouter([
+  {
+    element: <AppLayout />,
+    errorElement: <Error_500 />,
+    children: [
+      {
+        path: "/",
+        index: true,
+        element: <Info />,
+      },
+      {
+        path: "*",
+        element: <Error_404 />
+      },
+    ]
+  }
+]
+
 )
 
 function App() {
