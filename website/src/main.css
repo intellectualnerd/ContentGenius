@@ -1,14 +1,8 @@
-/*---------------------Fonts----------------------*/
-@import url("https://db.onlinewebfonts.com/c/a5a4db7e289653583c015ec552b49f5b?family=Lemon+Mocktail");
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/*---------------------Fonts (also in index.html)----------------------*/
 @font-face {
     font-family: Arial, Helvetica, sans-serif;
     src: url(./Fonts/helvetica-255-cufonfonts/Helvetica.ttf) format("ttf");
-}    
-@font-face {
-    font-family: "Lemon Mocktail";
-    src: url(./Fonts/lemon_mocktail/LemonMocktail.ttf) format("ttf");
-}
+}  
 /*---------------------Colors----------------------*/
 :root{
     --lemongreen : #87FF29;
