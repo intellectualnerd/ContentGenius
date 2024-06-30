@@ -308,11 +308,14 @@
         width: 100%;
     }
     .review-box {
-        width: 85%;
+        width: 90%;
         min-height: 0px;
     }
     .fix-carousel-height{
-        min-height: 600px;
+        min-height: 640px;
+    }
+    .carousel-indicators{
+        bottom: 5px;
     }
 }
 
