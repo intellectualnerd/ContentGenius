@@ -112,7 +112,6 @@
     padding: 32px !important;
     font-family: Arial, Helvetica, sans-serif;
     width: 60%;
-    min-height: 330px;
 }
 
 .user-photo {
@@ -191,6 +190,9 @@
     display: block;
 }
 
+.fix-carousel-height{
+    min-height: 450px;
+}
 @media screen and (max-width: 1400px) {
     .heroimg {
         height: 450px;
@@ -220,8 +222,9 @@
         bottom: -30px;
     }
     
-    .review-box {
-        min-height: 400px;
+    
+    .fix-carousel-height{
+        min-height: 500px;
     }
 }
 
@@ -237,8 +240,8 @@
     .carousel-review-text>span:nth-child(1) {
         font-size: 1.2rem;
     }
-    .review-box {
-        min-height: 450px;
+    .fix-carousel-height{
+        min-height: 550px;
     }
 }
 
@@ -261,9 +264,15 @@
         transform: translateX(8px);
         box-shadow: -15px 15px var(--darkgray);
         padding: 24px 12px !important;
-        min-height: 450px;
+        
     }
-
+    .carousel-review-text {    
+        margin-bottom: 10px;
+    }
+    
+    .fix-carousel-height{
+        min-height: 550px;
+    }
     .carousel-control-prev{
         transform: translateX(-25px);
     }
@@ -299,8 +308,11 @@
         width: 100%;
     }
     .review-box {
-        width: 90%;
+        width: 85%;
         min-height: 0px;
+    }
+    .fix-carousel-height{
+        min-height: 600px;
     }
 }
 
