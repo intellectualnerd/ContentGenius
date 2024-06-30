@@ -298,6 +298,10 @@
         padding: 28px 20px;
         width: 100%;
     }
+    .review-box {
+        width: 90%;
+        min-height: 0px;
+    }
 }
 
 @media screen and (max-width: 335px) {
