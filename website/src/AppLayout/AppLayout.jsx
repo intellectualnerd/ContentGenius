@@ -4,7 +4,7 @@ import LoaderAnimation from "./Loader/LoaderAnimation";
 import WebFont from 'webfontloader';
 const AppLayout = () => {
     const location = useLocation();
-    const [isLoading, setIsLoading] = useState(true); // Initialize isLoading to true initially
+    const [isLoading, setIsLoading] = useState(true ); // Initialize isLoading to true initially
 
     // useEffect(() => {
     //     let timer;
