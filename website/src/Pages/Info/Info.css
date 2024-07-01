@@ -9,6 +9,8 @@
     min-height: 730px;
     width: 100%;
     display: block;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .heroimg {
@@ -43,6 +45,9 @@
     padding: 50px 8%;
     background-color: var(--black);
     position: relative;
+    
+    max-width: 100%;
+    overflow: hidden;
 }
 
 
@@ -317,7 +322,6 @@
     }
     .fix-carousel-height{
         min-height: 640px;
-        
     }
     .carousel-indicators{
         bottom: 5px;
@@ -351,5 +355,4 @@
     .carousel-control-next{
         transform: translateX(25px);
     }
-    .normal-font {}
 }
