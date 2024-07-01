@@ -313,6 +313,7 @@
     }
     .fix-carousel-height{
         min-height: 640px;
+        
     }
     .carousel-indicators{
         bottom: 5px;
