@@ -101,7 +101,7 @@ const Info = () => {
             <Titlefonts text="Reviews From Users :" />
           </div>
 
-          <div className="my-3">
+          <div>
             <Reviews reviews={reviews}/>
           </div>
         </div>
