@@ -29,9 +29,9 @@ const Info = () => {
     },
     {
       /*by firebase we can get gmail photot link */
-      photo: 'https://lh3.googleusercontent.com/a-/ALV-UjX4K95JZeEuQ9wDKoqevtJFItBrXw8sdx2Ywt7ymgHUE1GC7X84dbmQO-w1YbDMwq-ubIDsy39aPmMOxyUsYOXjkDS1vt_Bu0MMa1jmGmeXQ8PlCo-FhHCPtgt61SZJf9fIW0smIfmKRcn_uaADUbQHYxo01j7CyjuAZUuLq0KoSuahOLHf7hII_Q3UT8qKc12lpavyZUW8xTmowNoKR2MvEw9BP7USwtvEyqEOhynmfDDb6iZJtj3OOCesKo6ICem2BbrT7G8PflZ0xzpQd75PwBKvPnVijJf0VjC06EdskuJYiOpHF6UKAf_GnObtFo5e4-hpNzOOSDeKfF21HSlDlQ5fN6URLB-_1SMuGwL-kZemwxN210Sp2e250TdRmMJHSWiF3jCILTWoYLTH71TGcg-posoqIS3GwleWom0A3F1hybudzIr13s-X_7TMu0jJ3Pw_Ofn0NNbfdydT7VOwB6DcB8aTR6UoETcU-4HWKL_ci-pwCdc_MbsQjQ8AUYkUlVV53lbLwYmk-MBAgI7_B055ogPt6kNqMFpVPRFUK9NNcivr4eMU9TOcKXFOJKPErURftPyESte1AcHzRxGoj4VNsB_TS1iSPcip5rRY71mu6klTpAQYOngnEFhYr7nWZvCi7uWvMBbrtphDHGzv5q_JGCdMnEdyjOlmljFwsJQVh8FnBcXNc2kJAwrMeIhgUozlNhMxhboyDu2FNKehalGbhrh6Dyqt0FO-lSW41zzUiizccne2qs25fWjqdcwSu1o3WDNF8VDXPJs9Mvtk24--0eFTymeRiKN9zjhlg5gFV2WxX7J1VEtt9vX23GkgXfxxDEikUohXrF0JNqgjSH1KaxGNXIdAwyRfCLlsDgtKc5g_O_QxXNAph8A-blaGTrdU9POU8i8fv9HoK56sc4UXM9bu6ZpnSdw2Eie-ZkHjejAtpVXDfBF_3fvilGH5FfWm4PfglI9kFAV1qK-p8Yhj=s83-c-mo',
-      name: 'Jane Smith',
-      email:"parmarparth954@gmail.com",
+      photo: 'https://ci3.googleusercontent.com/meips/ADKq_NaKCRA2j9TAs4xZUsu4meU3Ayj3UK6gStgfj5cmVsyAjhMYP0poQ065uCXGKki0f2IO6ddo3_nRLIJeiSq5YT3IgSRwU2wYY7kIz-TN2cEu=s0-d-e1-ft#https://avatars.githubusercontent.com/u/85880788?s=120&v=4',
+      name: 'Jainam Sanghavi',
+      email:"jainamsanghavi008@gmail.com",
       description: 'ContentGenius is a game-changer for content creators. Its personalized AI prompts and intuitive tools make creating engaging content effortless. Highly recommended',
     },
     // Add more reviews as needed
