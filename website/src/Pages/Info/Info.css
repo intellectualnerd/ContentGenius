@@ -172,7 +172,6 @@
 
 .review_container {
     padding-bottom: 100px;
-    padding-right:2.5%;
     transform: translateX(-20px);
 }
 
@@ -289,7 +288,6 @@
         margin: 5px !important;
     }
     .review_container {
-        padding-right:2.5%;
         transform: translateX(0px);
     }
 }
@@ -327,7 +325,6 @@
         bottom: 5px;
     }
     .review_container {
-        padding-right:0%;
         transform: translateX(0px);
     }
 }
