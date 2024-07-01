@@ -325,9 +325,15 @@
     .review_container {
         transform: translateX(0px);
     }
+    .carousel-control-prev{
+        transform: translateX(-35px);
+    }
+    .carousel-control-next{
+        transform: translateX(35px);
+    }
 }
 
-@media screen and (max-width: 335px) {
+@media screen and (max-width: 390px) {
     .heroimg {
         height: 200px;
     }
@@ -339,6 +345,11 @@
     .herobutton {
         margin-bottom: 220px;
     }
-
+    .carousel-control-prev{
+        transform: translateX(-25px);
+    }
+    .carousel-control-next{
+        transform: translateX(25px);
+    }
     .normal-font {}
 }
