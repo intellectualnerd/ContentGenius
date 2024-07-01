@@ -101,17 +101,16 @@
 }
 
 .review-box {
-    padding: 20px;
     background-color: var(--light-black);
     position: relative;
     z-index: 1;
     box-shadow: -25px 25px var(--darkgray);
     margin: 40px 0 80px 0 !important;
-    transform: translateX(20px);
     color: var(--gray);
     padding: 32px !important;
     font-family: Arial, Helvetica, sans-serif;
     width: 60%;
+    
 }
 
 .user-photo {
@@ -164,6 +163,7 @@
     border-radius: 50%;
     margin: 0px 8px !important;
     background-color: var(--gray) !important;
+
 }
 
 .carousel-indicators .active {
@@ -172,6 +172,8 @@
 
 .review_container {
     padding-bottom: 100px;
+    padding-right:2.5%;
+    transform: translateX(-20px);
 }
 
 .carousel-review-text {
@@ -193,6 +195,8 @@
 .fix-carousel-height{
     min-height: 450px;
 }
+
+
 @media screen and (max-width: 1400px) {
     .heroimg {
         height: 450px;
@@ -284,6 +288,10 @@
         width: 9px !important;
         margin: 5px !important;
     }
+    .review_container {
+        padding-right:2.5%;
+        transform: translateX(0px);
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -317,6 +325,10 @@
     }
     .carousel-indicators{
         bottom: 5px;
+    }
+    .review_container {
+        padding-right:0%;
+        transform: translateX(0px);
     }
 }
 

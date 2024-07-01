@@ -5,8 +5,7 @@ const Reviews = ({ reviews }) => {
     return (
         <div className='review_container'>
             <Carousel interval={5000} controls={true} indicators={true}>
-                {reviews.map((review, index) => (
-
+                {reviews.map((review, index) => (   
                     <Carousel.Item key={index}>
                         <div className='fix-carousel-height d-flex align-items-center justify-content-center'>
                         <div className="d-flex justify-content-center w-100 h-100 align-middle">
@@ -27,8 +26,6 @@ const Reviews = ({ reviews }) => {
                             </div>
                         </div>
                         </div>
-
-
                     </Carousel.Item>
                 ))}
 
