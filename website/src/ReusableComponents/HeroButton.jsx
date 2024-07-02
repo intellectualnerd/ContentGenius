@@ -1,9 +1,9 @@
 const HeroButton = (props) => {
     const svg = props.svg;
-   
+    const buttonFunction = props.onClick;
     return (
         <>
-            <button className="herobutton">
+            <button className="herobutton" onClick={buttonFunction}>
                 <span>
                     {props.text}
                     <svg className="herobutton_svg" viewBox="0 0 39 45" fill="none" xmlns="http://www.w3.org/2000/svg">

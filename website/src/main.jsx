@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Info from "./Pages/Info/Info";
 import Error_404 from "./Pages/Error/Error_404/Error_404";
-
+import User from "./Pages/User/User"
 // router and routes
 const router = createBrowserRouter([
   {
@@ -26,6 +26,10 @@ const router = createBrowserRouter([
         path: "/",
         index: true,
         element: <Info />,
+      },
+      {
+        path: "/user",
+        element: <User />
       },
       {
         path: "*",

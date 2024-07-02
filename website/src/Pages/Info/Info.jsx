@@ -36,7 +36,9 @@ const Info = () => {
     },
     // Add more reviews as needed
   ];
-
+  const handleGoogleSignIn = () => {
+    window.location.href = 'http://localhost:4000/signInWithGoogle';
+  };
 
   return (
     <>
@@ -57,7 +59,7 @@ const Info = () => {
           </div>
 
           <div>
-            <HeroButton text="Login Now" svg="login"></HeroButton>
+            <HeroButton text="Login Now" svg="login" onClick={handleGoogleSignIn}></HeroButton>
           </div>
 
           <Element />
