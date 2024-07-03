@@ -29,7 +29,6 @@ const AppLayout = () => {
                     'Arial, Helvetica, sans-serif'
                 ],
                 urls: [
-                    'https://db.onlinewebfonts.com/c/a5a4db7e289653583c015ec552b49f5b?family=Lemon+Mocktail',
                     '../main.css' // Replace with the actual path to your local font CSS file
                 ]
             },
