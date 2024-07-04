@@ -1,74 +1,82 @@
 /*---------------------Fonts (also in index.html)----------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @font-face {
     font-family: Arial, Helvetica, sans-serif;
     src: url(./Fonts/helvetica-255-cufonfonts/Helvetica.ttf) format("truetype");
-}    
+}
+
 @font-face {
     font-family: "Lemon Mocktail";
     src: url(./Fonts/lemon_mocktail/LemonMocktail.ttf) format("truetype");
 }
 
 /*---------------------Colors----------------------*/
-:root{
-    --lemongreen : #87FF29;
-    --dark-lemongreen : #76DB28;
-    --darkgreen : #447F16;
+:root {
+    --lemongreen: #87FF29;
+    --dark-lemongreen: #76DB28;
+    --darkgreen: #447F16;
 
-    --black :#161A16;
+    --black: #161A16;
     --light-black: #232523;
 
 
-    --white:#FFFFFF;
-    --gray:#D9D9D9;
-    --darkgray:#3C3C3C;
+    --white: #FFFFFF;
+    --gray: #D9D9D9;
+    --darkgray: #3C3C3C;
 }
 
 /*Have all reusable components css*/
-*{
-    margin: 0 ;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box !important;
     z-index: 2;
 }
+
 ::selection {
     color: var(--white);
     background: var(--darkgreen);
 }
 
 
-button{
+button {
     border: none;
 }
-.row{
+
+.row {
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
-}
-body{
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box !important;  
 }
 
-#root{
+body {
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
 }
-.herofonts{
+
+#root {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.herofonts {
     font-family: "Lemon Mocktail";
     font-size: 4.5rem;
     line-height: 4.2rem;
     font-weight: 500;
     text-shadow: -5px 0 var(--dark-lemongreen);
-    color :var(--black)
+    color: var(--black)
 }
-.herofonts-blckback{
+
+.herofonts-blckback {
     color: var(--lemongreen);
     text-shadow: -5px 0 #3A3A3B;
 }
-.herobutton{
+
+.herobutton {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -82,7 +90,8 @@ body{
     box-shadow: -6px 0px var(--gray);
     z-index: 2;
 }
-.herobutton::before{
+
+.herobutton::before {
     content: "";
     height: 100%;
     width: 100%;
@@ -90,22 +99,25 @@ body{
     position: absolute;
     z-index: 0;
     border: 3px solid var(--darkgreen);
-    top:0;
+    top: 0;
     right: -10px;
     rotate: -3deg;
     transition: 0.5s;
 }
-.herobutton:hover::before{
+
+.herobutton:hover::before {
     rotate: 0deg;
     right: 0;
 }
-.herobutton_svg{
+
+.herobutton_svg {
     display: inline-block;
     height: 2.2rem;
     margin-left: 10px;
     margin-top: 2px;
 }
-.title-bebasfont{
+
+.title-bebasfont {
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -113,67 +125,130 @@ body{
     color: var(--white);
 }
 
-@keyframes herobutton{
-    to{
-        rotate: 0;
-        right:0;
+.main::after {
+    width: 0%;
+    height: 100%;
+    content: " ";
+    position: absolute;
+    background-color: var(--light-black);
+    z-index: 5;
+    left: 0;
+    top: 0;
+    animation: leftToRight 1s ease-out;
+}
+
+.main::before {
+    width: 100%;
+    height: 100%;
+    content: " ";
+    position: absolute;
+    background-color: var(--lemongreen);
+    z-index: 4;
+    left: 0;
+    top: 0;
+    animation: opcityShow 1s ease-out forwards;
+    animation-delay: 0.8s;
+}
+
+@keyframes opcityShow {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
     }
 }
 
-@media screen and (max-width: 1200px){
-   .herofonts{
-    font-size: 4rem;
-    line-height: 3.8rem;
-   }
-   .title-bebasfont{
-    font-size: 2.8rem;
-   }
+@keyframes leftToRight {
+    from {
+        width: 100%;
+    }
+
+    to {
+        width: 0%;
+    }
 }
-@media screen and (max-width: 900px){
-    .herofonts{
+
+@keyframes bodyani {
+    from {}
+}
+
+@keyframes herobutton {
+    to {
+        rotate: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .herofonts {
+        font-size: 4rem;
+        line-height: 3.8rem;
+    }
+
+    .title-bebasfont {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .herofonts {
         font-size: 3rem;
         line-height: 2.8rem;
     }
-    
-   .title-bebasfont{
-    font-size: 2.4rem;
-   }
-}
-@media screen and (max-width: 768px){
 
+    .title-bebasfont {
+        font-size: 2.4rem;
+    }
 }
-@media screen and (max-width: 576px){
-    .herofonts{
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 576px) {
+    .herofonts {
         font-size: 2.7rem;
         line-height: 2.5rem;
-        text-shadow:  -3px 0 var(--dark-lemongreen);
+        text-shadow: -3px 0 var(--dark-lemongreen);
         font-family: "Lemon Mocktail";
     }
-    
-    .herofonts-blckback{
+
+    .herofonts-blckback {
         color: var(--lemongreen);
         text-shadow: -3px 0 #3A3A3B;
     }
-    .herobutton{
+
+    .herobutton {
         font-size: 1.2rem;
         padding: 10px 20px 8px 20px;
         box-shadow: -4px 0px var(--gray);
         margin-left: 4px;
     }
-    .herobutton::before{
+
+    .herobutton::before {
         border: 2px solid var(--darkgreen);
         right: -5px;
     }
-    .herobutton_svg{
+
+    .herobutton_svg {
         height: 1.4rem;
     }
+    .main::after{
+        animation: leftToRight 0.7s ease-out;
+    }
+    .main::before{
+        animation: opcityShow 0.7s ease-out forwards;
+        animation-delay: 0.4s;
+    }
 }
-@media screen and (max-width: 335px){
-    .herofonts{
+
+@media screen and (max-width: 335px) {
+    .herofonts {
         font-size: 2rem;
         line-height: 1.9rem;
     }
-    .title-bebasfont{
+
+    .title-bebasfont {
         font-size: 1.8rem;
     }
 }

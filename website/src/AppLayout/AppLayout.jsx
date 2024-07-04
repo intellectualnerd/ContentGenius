@@ -4,8 +4,8 @@ import LoaderAnimation from "./Loader/LoaderAnimation";
 import WebFont from 'webfontloader';
 const AppLayout = () => {
     const location = useLocation();
-    const [isLoading, setIsLoading] = useState(true ); // Initialize isLoading to true initially
-
+    const [isLoading, setIsLoading] = useState(true); // Initialize isLoading to true initially
+    const [animation, setAnimation] = useState(null);
     // useEffect(() => {
     //     let timer;
 
@@ -33,6 +33,7 @@ const AppLayout = () => {
                 ]
             },
             active: () => {
+                setAnimation("main");
                 setIsLoading(false);
             }
         });
@@ -43,10 +44,9 @@ const AppLayout = () => {
             setIsLoading(true); // Set isLoading to true if navigation state indicates loading
         }
     }, [location]);
-
     return (
         <>
-            <main style={isLoading?{overflowY:'hidden',height: '100px',width: '100px'}:{overflowY:'hidden',height: 'auto',width: 'auto'}}>
+            <main style={isLoading?{overflowY:'hidden',height: '100px',width: '100px',zIndex:999}:{overflowY:'hidden',height: 'auto',width: 'auto'}} className={animation}>
             {isLoading && <LoaderAnimation />}
                 <Outlet />
             </main>
