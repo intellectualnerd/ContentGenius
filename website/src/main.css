@@ -234,11 +234,11 @@ body {
         height: 1.4rem;
     }
     .main::after{
-        animation: leftToRight 0.7s ease-out;
+        animation: leftToRight 0.4s ease-out;
     }
     .main::before{
-        animation: opcityShow 0.7s ease-out forwards;
-        animation-delay: 0.4s;
+        animation: opcityShow 0.4s ease-out forwards;
+        animation-delay: 0.3s;
     }
 }
 
