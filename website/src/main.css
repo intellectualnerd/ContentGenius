@@ -153,6 +153,7 @@ body {
 @keyframes opcityShow {
     from {
         opacity: 1;
+        width: 0;
     }
 
     to {
