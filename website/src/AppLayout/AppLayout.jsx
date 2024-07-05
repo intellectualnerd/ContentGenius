@@ -33,7 +33,7 @@ const AppLayout = () => {
                 ]
             },
             active: () => {
-                setAnimation("main");
+                setAnimation("animationStart");
                 setIsLoading(false);
             }
         });
