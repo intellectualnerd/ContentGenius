@@ -3,6 +3,8 @@ import Cookies from 'js-cookie';
 
 const App = () => {
     const [user, setUser] = useState(null);
+    const [isSubmitted,setIsSubmitted]=useState(false)
+
     console.log("hiiiiiiiiii", user)
     useEffect(() => {
         // Fetch user data if necessary or check cookies
@@ -19,6 +21,8 @@ const App = () => {
             console.log('No user data found');
         }
     }, []);
+if(!isSubmitted)window.location.assign("/userInfo")
+
 
     return (
         <div>

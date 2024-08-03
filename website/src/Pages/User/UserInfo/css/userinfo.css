@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+.userMain{
+       background-color: #161a16;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+overflow: hidden;
+    flex-direction: column;
+}
+
+.userForm{
+    width: 100%;
+    height: 75%;
+    color:white;
+    display: flex;
+    justify-content: center;
+ margin-top: 30px;
+
+ 
+}
+
+.form{
+    height: 100%;
+    width: 70%;
+    background-color: #232523;
+    border-radius: 10px;
+    box-shadow: 0px 2px 0px 2px #23252355,
+    0px -2px 0px 2px #23252355,
+    2px 0px 0px 2px #23252355,
+    -2px 0px 0px 2px #23252355
+    ;
+
+
+
+}
+
+.userSteps{
+   
+    width: 100%;
+    height: 5%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+   
+}
+.stepContainer{
+    display: flex;
+    margin-right: 15%;
+}
+.steps{
+    height: 20px;
+    width: 20px;
+    background-color: #232523;
+    border: 1px solid #477e1e;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 10px;
+    
+}
+
+/* filled color #87ff29 */

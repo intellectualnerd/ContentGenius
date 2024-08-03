@@ -1,0 +1,113 @@
+.contentInfo{
+
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+ 
+}
+
+.TitleTag{
+    margin-top: 25px;
+    margin-left: 40px;
+    display: flex;
+   
+}
+
+label{
+   color: #a1a6ad;
+}
+.contentForm{
+    display: flex;
+    justify-content: center;
+  
+}
+
+
+.inputinfo input{
+    background-color: #1b1d20;
+    outline:  none;
+    border:  0.5px solid #464b52;
+    border-radius: 5px;
+    padding: 6px 12px;
+    color: white ;
+    width: 100%;
+    
+}
+
+.innerInfo textarea{
+      background-color: #1b1d20;
+    outline:  none;
+    border:  0.5px solid #464b52;
+    border-radius: 5px;
+        padding: 6px 12px;
+
+
+    color: white ;
+    width: 100%;
+    resize: none;
+    
+}
+
+.innerInfo select{
+      background-color: #1b1d20;
+    outline:  none;
+    border:  0.5px solid #464b52;
+    border-radius: 5px;
+       padding: 6px 12px;
+
+
+    color: white ;
+    width: 100%;
+    resize: none;
+    
+}
+.inputinfo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.innerInfo{
+  width: 100%;
+    display: flex;
+   justify-content: space-around;
+    margin-bottom: 20px;
+
+}
+
+.next_submit{
+
+    padding: 8px 16px;
+    border-radius: 5px;
+    float: right ;
+    margin-right: 12px;
+}
+
+.selected{
+    display: flex;
+}
+
+.selectedItem{
+    margin-top: 8px;
+    margin-right:5px;
+    background-color:gray;
+    padding: 2px 4px ;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* for website inputs */
+.webInfo{
+     width: 100%;
+    display: flex;
+   justify-content: space-around;
+    margin-bottom: 12px;
+}
+
+.no-margin{
+    margin-bottom: 0px !important;
+}
+.ten-bottom-margin{
+    margin-bottom: 10px !important;
+}

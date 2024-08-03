@@ -1,0 +1,8 @@
+.alert{
+    background-color: #280d0e;
+    color: #a36267;
+    padding: 6px 12px;
+    position: absolute;
+    z-index: 10;
+    
+}
