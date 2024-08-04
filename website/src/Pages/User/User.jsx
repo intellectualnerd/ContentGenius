@@ -1,16 +1,18 @@
+import "./user.css";
 import React, { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
+import { Outlet } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
 
-const App = () => {
+
+const User = () => {
     const [user, setUser] = useState(null);
-    console.log("hiiiiiiiiii", user)
+
     useEffect(() => {
-        // Fetch user data if necessary or check cookies
         const userData = Cookies.get('user');
         if (userData) {
             try {
                 const parsedUser = JSON.parse(userData);
-                
                 setUser(parsedUser);
             } catch (error) {
                 console.error('Error parsing user data from cookie', error);
@@ -19,21 +21,17 @@ const App = () => {
             console.log('No user data found');
         }
     }, []);
-
+    const [isCustomStyle, setIsCustomStyle] = useState(false);
     return (
-        <div>
-            <h1>Welcome</h1>
-            {user ? (
-                <div>
-                    <p>Name: {user.displayName}</p>
-                    <p>ID: {user.uid}</p>
+        <>
+            <div className="mydark">
+                {user && <Sidebar img={user.photoURL} isCustomStyle={isCustomStyle} setIsCustomStyle={setIsCustomStyle} name={user.displayName} />}
+                <div className={`app-container ${isCustomStyle ? 'custom-style user-content' : 'user-content'}`}>
+                    <Outlet isCustomStyle={isCustomStyle} setIsCustomStyle={setIsCustomStyle}/>
                 </div>
-            ) : (
-                <p>No user data found.</p>
-            )}
-        </div>
+            </div>
+        </>
     );
 };
 
-export default App;
-
+export default User;

@@ -41,6 +41,7 @@ const AppLayout = () => {
     useEffect(() => {
         // Check if the location state indicates loading
         if (location.state && location.state.action === "loading") {
+            setAnimation(null);
             setIsLoading(true); // Set isLoading to true if navigation state indicates loading
         }
     }, [location]);

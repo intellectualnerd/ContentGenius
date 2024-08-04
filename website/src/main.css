@@ -41,7 +41,8 @@
 
 
 button {
-    border: none;
+    background-color: transparent;
+    border: none !important;
 }
 
 .row {
@@ -124,7 +125,10 @@ body {
     font-size: 3rem;
     color: var(--white);
 }
-
+.mydark{
+    background-color: var(--black);
+    min-height: 100vh;
+}
 /* .main::after {
     width: 0%;
     height: 100%;

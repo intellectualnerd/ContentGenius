@@ -1,0 +1,326 @@
+.sidebar {
+    width: 300px;
+    background-color: var(--light-black);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    padding-left: 12px;
+}
+
+.container_outlet {
+    padding: 30px 40px;
+    padding-left: 340px;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 200px;
+    width: 100%;
+}
+
+.custom-style .container_outlet {
+    padding: 30px 100px 200px 200px !important;
+    transition: all 1s;
+}
+
+.profile {
+    padding: 32px 8px;
+}
+
+.userimage {
+    background-color: var(--darkgray);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+.userimage>img {
+    height: 100%;
+    width: 100%;
+}
+
+.username {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    position: absolute;
+    transform: translateY(11px);
+    width: 200px;
+    overflow: hidden;
+}
+
+.username>span {
+    color: var(--white);
+    margin-left: 20px;
+    transform: translateY(-100px);
+    opacity: 1;
+    overflow: scroll;
+}
+
+.options {
+    margin-top: 40px;
+    width: 100%;
+    padding: 0px 8px;
+    padding-bottom: 100px;
+}
+
+.optionsButton {
+    padding: 4px 8px;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: transparent;
+    color: var(--gray);
+    font-size: 1.6rem;
+    width: 100%;
+    text-align: left;
+    border-radius: 4px;
+}
+
+.optionsButton>span {
+    padding-left: 12px;
+}
+
+.optionssvg {
+    height: 30px;
+    width: 38px;
+    transform: translateY(-2px);
+    fill: var(--gray);
+    stroke: var(--gray);
+}
+
+.pathfillnone {
+    fill: none !important;
+}
+
+.optionsButton:hover {
+    color: var(--white);
+}
+
+.optionsButton:hover>.optionssvg {
+    fill: var(--white);
+    stroke: var(--white);
+}
+
+.custom-style .optionsButton>span {
+    display: none;
+}
+
+.custom-style .username {
+    opacity: 0;
+    display: none;
+}
+
+.sidebar.custom-style {
+    width: 100px !important;
+    transition: all 1s;
+}
+
+
+.optionsButton>span {
+    transition-delay: all 1s;
+}
+
+.username {
+    transition-delay: all 1s;
+}
+
+.active {
+    color: var(--lemongreen) !important;
+}
+
+.active .optionssvg {
+    fill: var(--lemongreen) !important;
+}
+
+.active .pathfillnone {
+    fill: none !important;
+    stroke: var(--lemongreen) !important;
+}
+
+.Searchbar_container {
+    background-color: var(--light-black);
+    border: 2px solid var(--lemongreen);
+    bottom: 30px;
+    position: fixed;
+    width: calc(100% - 380px);
+}
+
+.Searchbar_container::after {
+    bottom: -32px;
+    left: -2px;
+    height: 30px;
+    position: absolute;
+    content: '';
+    background-color: var(--black);
+    width: calc(100% + 4px);
+}
+
+.custom-style .Searchbar_container {
+    width: calc(100% - 300px);
+    transition: all 1s;
+}
+
+.Searchbar {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--white);
+    width: calc(100% - 10px);
+    resize: none;
+    padding: 8px 12px;
+    line-height: 1.2rem;
+    height: 2.2rem;
+}
+
+.Searchbar_container svg {
+    fill: var(--black);
+    height: 12px;
+    transform: translateY(-1px);
+    padding-left: 2px;
+}
+
+.Searchbar_container button {
+    background-color: var(--lemongreen);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 16px;
+    font-weight: 700;
+    float: right;
+}
+
+.featureNav {
+    margin: 30px 0;
+}
+
+.navButton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: var(--darkgray);
+    font-weight: 700;
+    margin-right: 30px;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+.activeNav {
+    color: var(--white);
+    position: relative;
+
+}
+
+.activeNav::after {
+    position: absolute;
+    content: " ";
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--lemongreen);
+}
+
+.display-none {
+    display: none;
+}
+
+.newIdea {
+    background-color: var(--light-black);
+    margin-top: 8px;
+    padding: 12px 18px;
+    color: var(--gray);
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+    font-size: 1.1rem;
+   
+}
+
+.newIdea.load-div {
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background-color: var(--light-black);
+    background: linear-gradient(to right, var(--light-black) 8%, var(--darkgray) 18%, var(--light-black) 33%);
+    background-size: 800px 104px;
+    position: relative;
+
+}
+
+@keyframes placeHolderShimmer {
+    0% {
+        background-position: -800px 0;
+    }
+
+    100% {
+        background-position: 800px 0;
+    }
+}
+
+.likeButton {
+    display: inline-block;
+}
+
+.likeButton>svg {
+    height: 2rem;
+    transform: translateY(-12%);
+}
+
+@media (max-height: 600px) {
+    .sidebar {
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .container_outlet {
+        padding: 20px 10px;
+        padding-left: 320px;
+    }
+
+    .custom-style .container_outlet {
+        padding: 20px 40px 20px 140px !important;
+    }
+
+    .Searchbar_container {
+        width: calc(100% - 340px);
+    }
+
+    .custom-style .Searchbar_container {
+        width: calc(100% - 180px);
+    }
+}
+
+@media (max-width: 900px) {
+    .container_outlet {
+        padding: 20px;
+        padding-left: 120px;
+    }
+
+    .custom-style .container_outlet {
+        padding: 20px 20px 20px 120px !important;
+    }
+
+    .Searchbar_container {
+        width: calc(100% - 140px);
+        bottom: 25px;
+    }
+
+    .custom-style .Searchbar_container {
+        width: calc(100% - 140px);
+    }
+}
+
+@media (max-width: 768px) {
+    .navButton {
+        margin: 6px 12px;
+    }
+
+    .activeNav::after {
+        bottom: -2px;
+    }
+
+}
+
+@media (max-width: 335px) {}
