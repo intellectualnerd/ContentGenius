@@ -315,4 +315,54 @@ Router.post('/getideas', async (req, res) => {
   }
 });
 
+
+
+Router.get('/getkeywords', async (req, res) => {
+  console.log("Generating content with Gemini...");
+    const promptQuery = `Make list of news related top keywords in india for youtube videos in array like [{
+      keyword:"computer science",
+      intent:"It's about the computer",
+      score:95,
+      chances:{popularity:"Low", competition:"High", overall:"Medium"}
+    },{
+      keyword:"computer science",
+      intent:"It's about the computer",
+      score:95,
+      chances:{popularity:"Low", competition:"High", overall:"Medium"}
+    }......]/n/n/n use High, medium and Low in chances and short intent of 8 to 10 words without any other text.`;
+    const generatedResult = await model.generateContent(promptQuery);
+    const responseContent = generatedResult.response;
+    console.log("Gemini content generated...");
+    const responseText = responseContent.text();
+    const arrayStart = responseText.indexOf("[");
+    const arrayEnd = responseText.indexOf("]");
+    const parsedData = JSON.parse(responseText.substring(arrayStart, arrayEnd + 1));
+    console.log(parsedData);
+    res.status(200).json(parsedData); 
+  
+})
+
+Router.post('/generateScript', async (req, res) => {
+
+  try {
+console.log("coming")
+    console.log("Generating content with Gemini...");
+    const promptQuery = `make like [{"title":"here is title", "script":"detailed script"}, {"title":"here is title", "script":"detailed script"},.....] of script from topic ${req.body.prompt} without any other text.`;
+    const generatedResult = await model.generateContent(promptQuery);
+    const responseContent = generatedResult.response;
+    console.log("Gemini content generated...");
+    const responseText = responseContent.text();
+    const arrayStart = responseText.indexOf("[");
+    const arrayEnd = responseText.indexOf("]");
+    const parsedData = JSON.parse(responseText.substring(arrayStart, arrayEnd + 1));
+    console.log(parsedData);
+    res.status(200).json(parsedData); 
+
+  } catch (error) {
+
+    res.status(500).json({ error: 'Failed to fetch ideas' });
+  }
+});
+
+
 export default Router;

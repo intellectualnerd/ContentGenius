@@ -17,6 +17,7 @@ import Info from "./Pages/Info/Info";
 import Error_404 from "./Pages/Error/Error_404/Error_404";
 import User from "./Pages/User/User";
 import UserInfo from './Pages/User/UserInfo/UserInfo'
+import ScriptGen from "./Pages/User/Features/ScriptGen";
 // router and routes
 const router = createBrowserRouter([
   {
@@ -52,7 +53,7 @@ const router = createBrowserRouter([
           },
           {
             path: "/user/scriptgen",
-            element: <IdeaGen/>
+            element: <ScriptGen/>
           },
           {
             path: "/user/topaitools",

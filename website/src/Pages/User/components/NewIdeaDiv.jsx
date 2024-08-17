@@ -1,5 +1,24 @@
 import React, { useState } from 'react';
 
+
+
+const TextWithNewLines = ({ text }) => {
+  return (
+    <div>
+      {text.split("**").map((part, index) => (
+        <React.Fragment key={index}>
+          {part}
+          {/* Add a line break after each segment except the last one */}
+          {index < text.split("**").length - 1 && <br />}
+        </React.Fragment>
+      ))}
+    </div>
+  );
+};
+
+
+
+
 const NewIdeaDiv = (props) => {
     // State to track whether the idea has been liked
     const [isLiked, setIsLiked] = useState(false);
@@ -54,7 +73,8 @@ const NewIdeaDiv = (props) => {
 
             {isDescriptionVisible && (
                 <div className='my-2'>
-                    {props.description}
+                    {/* {props.description} */}
+                    <TextWithNewLines text={props.description}/>
                 </div>
             )}
         </div>
